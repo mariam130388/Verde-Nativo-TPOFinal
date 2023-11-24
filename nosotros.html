@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Nativo</title>
+    <link rel="shortcut icon" href="img/hoja.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sofia&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e566946817.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="wrapper">
+  
+    </header>
+
+    
+    <main>
+
+      <div class="login-box" id="personal">
+        <div class="cuadrado_login">
+          <div id="cerrar"><a href="javascript:cerrar()"><img src="img/cruzar.png" alt=""></a></div>
+          <form onsubmit="return validar();">
+            <h3>Login</h3>
+            <label class="label" for='usuario'>Usuario:</label>
+            <input type='text' name='usuario' id='usuario' value="" />
+            <span class="error" id="validar_usuario" style="color:#dbd8ca;"></span>
+            <br>
+            <label class="label" for="clave">Clave:</label>
+            <input type='password' name='clave' id='clave' value="" />
+            <span class="error" id="validar_clave" style="color:#dbd8ca;"></span>
+            <br>
+            <input type='submit' value='Enviar'></td>
+            <br>
+              <div class="button">
+                <p class="cuenta_registrate">¿No tenes cuenta?</p>
+                <button><a class="registrate" href="contacto.html">Registrate</a></button>
+              </div>
+          </form>
+        </div>
+      </div>
+
+<div class="contenedor_general">
+        <div class="us1">
+            <h2>Acerca de Nosotros</h2>
+            <p>Bienvenidos al proyecto Verde Nativo, un rincón verde en el corazón de Buenos Aires dedicado a la conservación y promoción de la belleza natural de nuestra región. En nuestro vivero, nos enorgullecemos de cultivar y cuidar plantas nativas argentinas, contribuyendo así a la preservación de la biodiversidad local y a la creación de jardines sostenibles y hermosos.</p>
+            <h2>Nuestra historia</h2>
+            <p>Fundado en 2020, nuestro vivero nace del amor y la pasión por la flora -y fauna- autóctona de Buenos Aires. Comenzamos como un pequeño proyecto en el jardín de nuestra casa y, con el tiempo, hemos crecido para convertirnos en un lugar reconocido por amantes de la naturaleza y paisajistas en toda la región.</p>
+            <h2>Nuestra misión</h2>
+            <p>Somos conscientes de la importancia de proteger el medio ambiente y minimizar nuestro impacto en él. Por eso, en proyecto Verde Nativo, nos esforzamos por utilizar prácticas de cultivo sostenibles, minimizar el uso de químicos y plásticos, y promover la reutilización de materiales. También participamos activamente en proyectos de restauración de áreas naturales locales.</p>
+            <h2>Nuestro Equipo</h2>
+            <p>Detrás de proyecto Verde Nativo hay un equipo apasionado de jardineros, botánicos y amantes de la naturaleza. Estamos acá para brindarte asesoramiento experto sobre las plantas nativas de Buenos Aires, ayudarte a seleccionar las especies adecuadas para tu jardín y responder a todas tus preguntas relacionadas con la jardinería y la conservación.</p>
+            <h2>Visitanos</h2>
+            <p>Te invitamos a visitar nuestro vivero y descubrir la belleza de las plantas nativas de Buenos Aires. Ya sea que estés planeando un jardín en casa, un proyecto de paisajismo o simplemente quieras aprender más sobre la flora local, estamos acá para ayudarte.</p>
+            <p>Gracias por apoyar nuestra misión y por elegir proyecto Verde Nativo como tu fuente confiable de plantas nativas y conocimiento botánico en Buenos Aires.</p>
+        </div>
+    
+       
+        <div class="ubicacion">
+          <h2 id="h2_ubicacion">Nuestras Sucursales</h2>
+            <div class="mapa"><iframe
+            class="iframe"    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.806448607626!2d-58.5340769!3d-34.482434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb06adde04479%3A0x94149f8203071a6f!2sLaprida%201633%2C%20B1642FSG%20San%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697055081749!5m2!1ses!2sar"
+              width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Sucursal Laprida 1633 CABA</p>
+
+          </div>
+
+          <div class="mapa"><iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.921770211795!2d-58.40735272344438!3d-34.58084595629206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb56317501a55%3A0x8033ca4a9496e4a2!2sAv.%20del%20Libertador%202304%2C%20C1425AAI%20CABA!5e0!3m2!1ses!2sar!4v1697714225826!5m2!1ses!2sar"
+              width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Sucursal Av.del Libertador 2304 CABA</p>
+
+          </div>
+          <div class="mapa"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105286.40913027446!2d-59.0207602027344!3d-34.4470634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c5713587819%3A0x39ea2834d34ffd98!2sLas%20Palmas%20del%20Pilar!5e0!3m2!1ses!2sar!4v1697716605929!5m2!1ses!2sar"
+              width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Sucursal Panamericana Km.50 BS.AS.</p>
+          </div>
+        </div>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+    
+      </main>
+
+    
+
+
+    <div class="footer">
+      <footer>
+       
+      </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/hamburguesa.js"></script>
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Nativo</title>
+    <link rel="shortcut icon" href="img/hoja.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sofia&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e566946817.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="wrapper">
+
+    </header>
+
+    <main>
+
+        <div class="login-box" id="personal">
+            <div class="cuadrado_login">
+              <div id="cerrar"><a href="javascript:cerrar()"><img src="img/cruzar.png" alt=""></a></div>
+              <form onsubmit="return validar();">
+                <h3>Login</h3>
+                <label class="label" for='usuario'>Usuario:</label>
+                <input type='text' name='usuario' id='usuario' value="" />
+                <span class="error" id="validar_usuario" style="color:#dbd8ca;"></span>
+                <br>
+                <label class="label" for="clave">Clave:</label>
+                <input type='password' name='clave' id='clave' value="" />
+                <span class="error" id="validar_clave" style="color:#dbd8ca;"></span>
+                <br>
+                <input type='submit' value='Enviar'></td>
+                <br>
+              <div class="button">
+                <p class="cuenta_registrate">¿No tenes cuenta?</p>
+                <button><a class="registrate" href="contacto.html">Registrate</a></button>
+              </div>
+              </form>
+            </div>
+          </div>
+
+
+        <div class="categoria">
+            <h2 class="h2-con-margen-superior">HERBÁCEAS</h2>
+            <div class="wrap">
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card1">
+                            <img src="img/flor-amancay.jpg" alt="Amancay">
+                            <h2>Amancay</h2>
+                            <p>Alstroemeria aurea</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Amancay</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 1 m - Diámetro: 0.2 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Medio</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>Si</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sol / Media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Perenne</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>Amarillo</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas y división de rizomas</td>
+                                </tr>
+                            </table>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card2">
+                            <img src="img/Begonia-cucullata.jpg" alt="Flor de Nacar">
+                            <h2>Flor de Nácar</h2>
+                            <p>Begonia cucullata</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Flor de Nácar</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 1 m - Diámetro: 0.5 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Medio</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>Si</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sol / Media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Semicaduco</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>Rosa</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas y división de matas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card3">
+                            <img src="img/marg fucsia.jpg" alt="Margarita fucsia">
+                            <h2>Margarita Fucsia</h2>
+                            <p>Senecio pulcher</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                            <tr>
+                                <th colspan="2">Margarita Fucsia</th>
+                            </tr>
+                            <tr>
+                                <td>medidas</td>
+                                <td>Alto: 0,6 m - Diámetro: 0.3 m</td>
+                            </tr>
+                            <tr>
+                                <td>riego</td>
+                                <td>Escaso</td>
+                            </tr>
+                            <tr>
+                                <td>apto maceta</td>
+                                <td>Si</td>
+                            </tr>
+                            <tr>
+                                <td>exposición</td>
+                                <td>Sol</td>
+                            </tr>
+                            <tr>
+                                <td>duración</td>
+                                <td>Persistente</td>
+                            </tr>
+                            <tr>
+                                <td>colores de floración</td>
+                                <td>fucsia</td>
+                            </tr>
+                            <tr>
+                                <td>perfume</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>propagación</td>
+                                <td>Semillas</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>       
+            
+            <H2>ARBUSTOS</H2>
+            <div class="wrap">
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card4">
+                            <img src="img/Sambucus_002.jpg" alt="Sauco">
+                            <h2>Sauco</h2>
+                            <p>Sambucus australis</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Sauco</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 4 m - Diámetro: 3 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Escaso</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>Si</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sombra / Media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Semicaduco</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>blanco</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>si</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas y gajos</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card5">
+                            <img src="img/thumbs_20170406122005_LB___330b-400px.jpg" alt="Calafate">
+                            <h2>Calafate</h2>
+                            <p>Berberis microphylla</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Calafate</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 4 m - Diámetro: 4 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Medio</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sol / Media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Perenne</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>amarillo</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card6">
+                            <img src="img/Cnicothamnus_lorentzii_Vivero_Silvestra.jpg" alt="Azafrán">
+                            <h2>Azafrán</h2>
+                            <p>Cnicothamnus lorentzii</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Azafrán</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 5 m - Diámetro: 4 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Medio</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sol / Media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Semicaduco</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>naranja</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas y gajos</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <H2>TREPADORAS</H2>
+            <div class="wrap">
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card7">
+                            <img src="img/large.jpeg" alt="Virreina">
+                            <h2>Virreina</h2>
+                            <p>Pseudogynoxys benthamii</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Virreina</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 4 m - Diámetro: 2 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Medio</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>si</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sombra / Media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Semicaduco</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>naranja</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas y gajos</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card8">
+                            <img src="img/Mutisia--Mutisia-decurrens--VLA.jpg" alt="Mutisia">
+                            <h2>Mutisia</h2>
+                            <p>Mutisia decurrens</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                            <tr>
+                                <th colspan="2">Mutisia</th>
+                            </tr>
+                            <tr>
+                                <td>medidas</td>
+                                <td>Alto: 2 m - Diámetro: 0.3 m</td>
+                            </tr>
+                            <tr>
+                                <td>riego</td>
+                                <td>Medio</td>
+                            </tr>
+                            <tr>
+                                <td>apto maceta</td>
+                                <td>si</td>
+                            </tr>
+                            <tr>
+                                <td>exposición</td>
+                                <td>Sol</td>
+                            </tr>
+                            <tr>
+                                <td>duración</td>
+                                <td>caduco</td>
+                            </tr>
+                            <tr>
+                                <td>colores de floración</td>
+                                <td>naranja</td>
+                            </tr>
+                            <tr>
+                                <td>perfume</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <td>propagación</td>
+                                <td>Semillas y gajos</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card9">
+                            <img src="img/original.jpeg" alt="Maracuyá">
+                            <h2>Maracuyá</h2>
+                            <p>Passiflora edulis</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                            <tr>
+                                <th colspan="2">Maracuyá</th>
+                            </tr>
+                            <tr>
+                                <td>medidas</td>
+                                <td>Alto: 5 m - Diámetro: 0.3 m</td>
+                            </tr>
+                            <tr>
+                                <td>riego</td>
+                                <td>Escaso</td>
+                            </tr>
+                            <tr>
+                                <td>apto maceta</td>
+                                <td>si</td>
+                            </tr>
+                            <tr>
+                                <td>exposición</td>
+                                <td>Sol / media sombra</td>
+                            </tr>
+                            <tr>
+                                <td>duración</td>
+                                <td>semicaduco</td>
+                            </tr>
+                            <tr>
+                                <td>colores de floración</td>
+                                <td>blanco</td>
+                            </tr>
+                            <tr>
+                                <td>perfume</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <td>propagación</td>
+                                <td>Semillas</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <H2>CÁCTUS Y SUCULENTAS</H2>
+            <div class="wrap">
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card10">
+                            <img src="img/seda (1).jpg" alt="Flor de seda">
+                            <h2>Flor de seda</h2>
+                            <p>Calliandra parvifolia</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                            <tr>
+                                <th colspan="2">Flor de seda</th>
+                            </tr>
+                            <tr>
+                                <td>medidas</td>
+                                <td>Alto: 0.15 m - Diámetro: 0.2 m</td>
+                            </tr>
+                            <tr>
+                                <td>riego</td>
+                                <td>Escaso</td>
+                            </tr>
+                            <tr>
+                                <td>apto maceta</td>
+                                <td>si</td>
+                            </tr>
+                            <tr>
+                                <td>exposición</td>
+                                <td>Sol</td>
+                            </tr>
+                            <tr>
+                                <td>duración</td>
+                                <td>perenne</td>
+                            </tr>
+                            <tr>
+                                <td>colores de floración</td>
+                                <td>fucsia</td>
+                            </tr>
+                            <tr>
+                                <td>perfume</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <td>propagación</td>
+                                <td>Semillas o Hijuelos</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card11">
+                            <img src="img/portulaca (1).jpeg" alt="Flor de un día">
+                            <h2>Flor de un día</h2>
+                            <p>Portulaca grandiflora</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Flor de un dia</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 0.2 m - Diámetro: 0.2 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Escaso</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>si</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sol</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>caduco</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>fucsia</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card12">
+                            <img src="img/tuna (1).jpg" alt="Tuna">
+                            <h2>Tuna</h2>
+                            <p>Opuntia elata</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Tuna</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 2 m - Diámetro: 1.5 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>Escaso</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>si</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sol</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>persistente</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>naranja</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas o Hijuelos</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <H2>ÁRBOLES</H2>
+            <div class="wrap">
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card13">
+                            <img src="img/flor-del-ceibo-20221122-1457854.jpg" alt="Ceibo">
+                            <h2>Ceibo</h2>
+                            <p>Erythrina crista-galli</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">ceibo</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 8 m - Diámetro: 3 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>medio</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>si</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sombra / media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>caduco</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>rojo</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card14">
+                            <img src="img/mirto-arrayan-semillas.jpg" alt="Arrayán">
+                            <h2>Arrayán</h2>
+                            <p>Luma apiculata</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Arrayán</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 12 m - Diámetro: 4 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>abundante</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sombra / Media sombra / Sol</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Perenne</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>blanco</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>si</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante card15">
+                            <img src="img/jacaranda.jpg" alt="Jacarandá">
+                            <h2>Jacarandá</h2>
+                            <p>Jacaranda mimosifolia</p>
+                        </div>
+                        <div class="atras">
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Jacarandá</th>
+                                </tr>
+                                <tr>
+                                    <td>medidas</td>
+                                    <td>Alto: 15 m - Diámetro: 6 m</td>
+                                </tr>
+                                <tr>
+                                    <td>riego</td>
+                                    <td>medio</td>
+                                </tr>
+                                <tr>
+                                    <td>apto maceta</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>exposición</td>
+                                    <td>Sol / Media sombra</td>
+                                </tr>
+                                <tr>
+                                    <td>duración</td>
+                                    <td>Caduco</td>
+                                </tr>
+                                <tr>
+                                    <td>colores de floración</td>
+                                    <td>Violeta / Lila</td>
+                                </tr>
+                                <tr>
+                                    <td>perfume</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td>propagación</td>
+                                    <td>Semillas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+        
+  
+    </main>
+
+
+    <div class="footer">
+        <footer>
+            
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/hamburguesa.js"></script>
+</body>
+</html>

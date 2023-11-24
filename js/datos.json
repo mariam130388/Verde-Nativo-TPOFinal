@@ -1,0 +1,192 @@
+{
+    "content":[
+    
+    
+    {   
+        "id":1,
+        "precio": "$1000",
+        "name": "Amancay",
+        "description": "Presenta flores grandes amarillas y con agradable aroma",
+        "size":"Crece hasta 1 metro",
+        "image": "img/flor-amancay.jpg"
+    },
+    
+
+
+    {
+        "id":2,
+        "precio": "$1000",
+        "name": "Margarita Fucsia",
+        "description": "Se caracteriza por presentar las flores dispuestas en una inflorescencia compuesta, se halla rodeada de una o más filas de brácteas, más conocida por todos como familia de las “margaritas”.",
+        "size": "Crece de 30 a 40 cm de altura",
+        "image":"img/marg fucsia.jpg"
+    },
+    {
+        "id":3,
+        "precio": "$1000",
+        "name": "Sauco",
+        "description": "Arbusto de numerosas flores blancas (ocasionalmente rosas)con fruto de baya tóxica, negra, pequeña, globosa de 5 o 6 mm de diámetro.",
+        "size":"De 2 a 3 metros",
+        "image":"img/Sambucus_002.jpg"
+    },
+    {
+        "id":4,
+        "precio": "$1000",
+        "name": "Calafate",
+        "description": "Es un arbusto con el tronco muy ramificado desde la base y flores pentámeras, de color amarillo.",
+        "size":"Hasta un metro",
+        "image": "img/thumbs_20170406122005_LB___330b-400px.jpg"
+    },
+    {
+        "id":5,
+        "precio": "$1000",
+        "name": "Azafrán",
+        "description": "En invierno produce grandes inlorescencias en forma de capítulo, que se presentan solitarias en el extremo de las ramas.",
+        "size":"Hasta un metro",
+        "image": "img/Cnicothamnus_lorentzii_Vivero_Silvestra.jpg"
+    },
+    {
+        "id":6,
+        "precio": "$1000",
+        "name": "Flor de Nácar",
+        "description": "Es una planta trepadora que posee bellas flores de apariencia cerosa",
+        "size": "Crece hasta 1 metro",
+        "image": "img/Begonia-cucullata.jpg"
+    },
+    {
+        "id":7,
+        "precio": "$1000",
+        "name": "Virreina",
+        "description": "Es un arbusto apoyante o voluble de flores naranjas",
+        "size":"Hasta 4 metros",
+        "image": "img/large.jpeg"
+    },
+    {
+        "id":8,
+        "precio": "$1000",
+        "name": "Mutisia",
+        "description": "Es una planta trepadora, posee tallos glabros ramificados. Sus flores son de color naranja intenso con entre siete a 14 pétalos con una corola abierta.",
+        "size":"Crece 4 a 5 metros",
+        "image":"img/Mutisia--Mutisia-decurrens--VLA.jpg"
+    },
+    
+    {
+        "id":9,
+        "precio": "$1000",
+        "name": "Maracuyá",
+        "description": "Planta trepadora de tallo rígido y leñoso, con flores blancas de tintes rosáceos o rojizos",
+        "size":"Crece hasta 9 metros",
+        "image": "img/original.jpeg"
+    },
+    
+    {
+        "id":10,
+        "precio": "$1000",
+        "name": "Flor de seda",
+        "description": "Arbusto inerme, ramificado con flores en pedicelos de 1-5 mm de largo",
+        "size":"Crece de 2 a 3 metros",
+        "image": "img/seda (1).jpg"
+    },
+    
+    {
+        "id":11,
+        "precio": "$1000",
+        "name": "Flor de un día",
+        "description": "Hierbas anuales, con tallos carnosos, ramosos, rastreros o decumbentes, erectos en floración con raíces engrosadas o no.",
+        "size":"Hasta 0,2 metros",
+        "image": "img/portulaca (1).jpeg"
+    },
+    
+    {
+        "id":12,
+        "precio": "$1000",
+        "name": "Tuna",
+        "description": " Arbusto con ramas más o menos erguidas. Es de color verde oscuro, con cladodios oblongos a ovales",
+        "size":"Crece de 1 a 2 metros de altura",
+        "image": "img/tuna (1).jpg"
+    },
+    
+    {
+        "id":13,
+        "precio": "$1000",
+        "name": "Ceibo",
+        "description": "Árbol de porte mediano con flores de color rojo que surgen en inflorescencias arracimadas. Tienen cinco pétalos con simetría bilateral.",
+        "size":"Crece de 5 a 8 metros",
+        "image":"img/flor-del-ceibo-20221122-1457854.jpg"
+    },
+    
+    {
+        "id":14,
+        "precio": "$1000",
+        "name": "Arrayán",
+        "description": "Árbol de corteza castaña cuando el árbol es joven y anaranjado cuando es adulto, de flores blancas o levemente rosadas y aromáticas.",
+        "size":"Crece hasta 12 metros",
+        "image": "img/mirto-arrayan-semillas.jpg"
+    },
+    
+    {
+        "id":15,
+        "precio": "$1000",
+        "name": "Jacarandá",
+        "description": "Árbol de tronco retorcido color pardo grisáceo. Las flores, de 4 a 5 cm, están agrupadas en panículas terminales erectas, de 20 a 30 cm y son de color azul violeta.",
+        "size":"Crece de 12 a 15 metros.",
+        "image": "img/jacaranda.jpg"
+    },
+
+    
+    {
+        "id":16,
+        "precio": "$1000",
+        "name": "Maceta N65",
+        "description": "Ideal para terrazas y balcones, estilo rectangular color marrón. Material: Plástico",
+        "size":"10cm x 35cm x 15cm",
+        "image": "img/maceta 1.jpg"
+    },
+    
+    {
+        "id":17,
+        "precio": "$1500",
+        "name": "Maceta Tramada",
+        "description": "Apta para jardines e interiores, colores varios. Material: Plástico",
+        "size":"25cm diámetro x 35cm de alto",
+        "image": "img/r510.jpg"
+    },
+    
+    {
+        "id":18,
+        "precio": "$2000",
+        "name": "Maceta con base",
+        "description": "Elegante y a la altura de departamientos y casas por igual. Colores varios. Material: Base de madera, Maceta de porcelana",
+        "size":"Base: 15cmx15cmx40cm, Maceta: Diámetro 15cmx25cm",
+        "image": "img/escandinavo.jpg"
+    },
+    
+    {
+        "id":19,
+        "precio": "$1000",
+        "name": "Hummus",
+        "description": "Compuesto por hummus, sedimentos naturales y tierra negra fértil",
+        "size":"Medio litro",
+        "image": "img/tierra.jpg"
+    },
+    
+    {
+        "id":20,
+        "precio": "$1500",
+        "name": "Abono",
+        "description": "Compuesto por tierra negra y sedimentos varios",
+        "size":"1 litro",
+        "image": "img/tierra.jpg"
+    },
+    
+    {
+        "id":21,
+        "precio": "$2000",
+        "name": "Tierra fértil",
+        "description": "Compuesto por tierra negra y sedimentos varios",
+        "size":"5 litros",
+        "image": "img/tierra.jpg"
+    }
+
+    ]
+    }

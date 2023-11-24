@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Nativo</title>
+    <link rel="shortcut icon" href="img/hoja.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sofia&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e566946817.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="wrapper">
+      
+    </header>
+    
+    <main>
+      <div class="login-box" id="personal">
+        <div class="cuadrado_login">
+          <div id="cerrar"><a href="javascript:cerrar()"><img src="img/cruzar.png" alt=""></a></div>
+          <form onsubmit="return validar();">
+            <h3>Login</h3>
+            <label class="label" for='usuario'>Usuario:</label>
+            <input type='text' name='usuario' id='usuario' value="" />
+            <span class="error" id="validar_usuario" style="color:#dbd8ca;"></span>
+            <br>
+            <label class="label" for="clave">Clave:</label>
+            <input type='password' name='clave' id='clave' value="" />
+            <span class="error" id="validar_clave" style="color:#dbd8ca;"></span>
+            <br>
+            <input type='submit' value='Enviar'></td>
+            <br>
+              <div class="button">
+                <p class="cuenta_registrate">¿No tenes cuenta?</p>
+                <button><a class="registrate" href="contacto.html">Registrate</a></button>
+              </div>
+          </form>
+        </div>
+      </div>
+        <div id="cont" class="guia">
+            <h2>Contacto/Registro</h2>
+        </div>
+        <div class="contacto">
+          <div class="form1">
+            <p>¿Tenés alguna duda? ¿querés inscribirte a algún curso/taller? Comunicate con nosotros</p>
+            <form onsubmit="return consultar();">
+                <fieldset class="form1">
+                    <legend>Información de contacto</legend>
+                        <label for="mail">E-mail: <input id="email" name="mail" type="email"></label>
+                        <span id="validar_email" style="color:red;"></span>
+                        <label for="tel">Teléfono: <input id='telefono' name="tel" type="number"></label>
+                        <span id="validar_telefono" style="color:red;"></span>
+                        <label for="mensaje">Mensaje: <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea></label>
+                        <span id="validar_mensaje" style="color:red;"></span>
+                </fieldset>
+                <input type="submit" value="Enviar">
+              </form>
+
+              <!-- <form onsubmit="return contactar();">
+                <fieldset class="form1">
+                  <legend>Información de contacto</legend>
+                  <label class="nombre" for='nombre'>Nombre:</label>
+                  <input type='text' name='nombre' id='nombre'  />
+                  <span id="validar_nombre" style="color:red;"></span>
+                  <label for='email' name='email'>E-mail: </label>
+                  <input type='email' name='email' id="email">
+                  <span id="validar_email" style="color:red;"></span>
+                  <label class="telefono" for='telefono'>Telefono:</label>
+                  <input type='text' name='telefono' id='telefono'  />
+                  <span id="validar_telefono" style="color:red;"></span>
+                  <label for="mensaje">Mensaje: </label>
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea></label>
+                </fieldset>
+                <input type='submit' value='Enviar'></td>
+                </fieldset>
+              </form>
+            </div> -->
+
+
+
+          </div>
+          <div class="form2">
+            <p>Registrate a nuestra pagina para realizar compras en el sitio</p>
+            <fieldset class="form2">
+              <legend>Registro</legend>
+              <form onsubmit="return registrar();">
+                <label for='usuario'>Usuario:</label>
+                <input type='text' name='usuario' id='registro_usuario' value="" />
+                <span id="validar_registro_usuario" style="color:red;"></span><br>
+                <label for='clave'>Clave:</label>
+                <input type='password' name='clave' id='registro_clave' value="" />
+                <span id="validar_registro_clave" style="color:red;"></span>
+                <br><br>
+                <input type='submit' value='Enviar'></td>
+            </fieldset>
+          </form>
+          </div>
+        </div>
+          
+        
+    </main>
+
+    
+    <div class="footer">
+      <footer>
+         
+
+      </footer>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/hamburguesa.js"></script>
+</body>
+</html>
