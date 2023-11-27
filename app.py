@@ -30,7 +30,15 @@ class Producto(db.Model):   # la clase Producto hereda de db.Model
 
 
 
-
+class Curso(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    nombre=db.Column(db.String(100))
+    precio=db.Column(db.Integer)
+    duracion=db.Column(db.String(20))
+    def __init__(self, id, nombre, precio,duracion):
+        self.nombre=nombre
+        self.precio=precio
+        self.duracion=duracion
     #  si hay que crear mas tablas , se hace aqui
 
 
@@ -48,6 +56,17 @@ class ProductoSchema(ma.Schema):
 
 producto_schema=ProductoSchema()            # El objeto producto_schema es para traer un producto
 productos_schema=ProductoSchema(many=True)  # El objeto productos_schema es para traer multiples registros de producto
+
+
+
+
+class CursoSchema(ma.Schema):
+    class Meta:
+        fields=("id","nombre","precio","duracion")
+                
+curso_schema = CursoSchema()
+cursos_schema = CursoSchema(many=True)
+
 
 
 
@@ -103,6 +122,56 @@ def update_producto(id):
     db.session.commit()    # confirma el cambio
     return producto_schema.jsonify(producto)    # y retorna un json con el producto
  
+ 
+ 
+ 
+ # Endpoint para obtener todos los cursos
+@app.route('/cursos', methods=['GET'])
+def get_cursos():
+    cursos = Curso.query.all()
+    result = cursos_schema.dump(cursos)
+    return jsonify(result)
+
+# Endpoint para obtener un curso por su ID
+@app.route('/cursos/<id>', methods=['GET'])
+def get_curso(id):
+    curso = Curso.query.get(id)
+    return curso_schema.jsonify(curso)
+
+# Endpoint para crear un nuevo curso
+@app.route('/cursos', methods=['POST'])
+def create_curso():
+    nombre = request.json['nombre']
+    precio = request.json['precio']
+    duracion = request.json['duracion']
+    
+    nuevo_curso = Curso(nombre=nombre, precio=precio, duracion=duracion)
+    db.session.add(nuevo_curso)
+    db.session.commit()
+    return curso_schema.jsonify(nuevo_curso)
+
+# Endpoint para actualizar un curso por su ID
+@app.route('/cursos/<id>', methods=['PUT'])
+def update_curso(id):
+    curso = Curso.query.get(id)
+    
+    curso.nombre = request.json['nombre']
+    curso.precio = request.json['descripcion']
+    curso.duracion = request.json['duracion']
+    
+    db.session.commit()
+    
+    return curso_schema.jsonify(curso)
+
+# Endpoint para eliminar un curso por su ID
+@app.route('/cursos/<id>', methods=['DELETE'])
+def delete_curso(id):
+    curso = Curso.query.get(id)
+    db.session.delete(curso)
+    db.session.commit()
+    
+    return curso_schema.jsonify(curso)
+
 
 
 # programa principal *******************************
