@@ -27,7 +27,7 @@ const { createApp } = Vue
                     this.nombre = data.nombre,
                     this.imagen=data.imagen,
                     this.stock=data.stock,
-                    this.precio=data.precio                   
+                    this.precio=data.precio,                   
                 })
                 .catch(err => {
                     console.error(err);
@@ -39,7 +39,7 @@ const { createApp } = Vue
                 nombre:this.nombre,
                 precio: this.precio,
                 stock: this.stock,
-                imagen: this.imagen
+                imagen: this.imagen,
             }
             var options = {
                 body: JSON.stringify(producto),
