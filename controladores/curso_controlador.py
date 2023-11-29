@@ -28,9 +28,6 @@ def create_curso():
     db.session.commit()
     return curso_schema.jsonify(nuevo_curso)
 
-from app import *
-from flask import jsonify, request
-
 from modelos.curso_modelo import *
 
 # Endpoint para actualizar un curso por su ID
