@@ -10,10 +10,11 @@ const { createApp } = Vue
         cargando:true,
         /*atributos para el guardar los valores del formulario */
         datos:[],
-        nombre:"",
+        name:"",
         precio:0,
         stock:0,
-        
+        image: "",
+        description: ""
        
     }  
     },
@@ -45,10 +46,11 @@ const { createApp } = Vue
 
                 grabar(){
                     let producto = {
-                        nombre:this.nombre,
+                        name:this.name,
                         precio: this.precio,
                         stock: this.stock,
-                        imagen:this.imagen
+                        image:this.image,
+                        description: this.description
                     }
                     var options = {
                         body:JSON.stringify(producto),

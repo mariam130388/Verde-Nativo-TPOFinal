@@ -2,7 +2,7 @@
 
 
 console.log(location.search)     // lee los argumentos pasados a este formulario
-var id=location.search.substr()  // producto_update.html?id=1*/
+var id=location.search.substr(4)  // producto_update.html?id=1*/
 console.log(id)
 
 const { createApp } = Vue
@@ -10,11 +10,12 @@ const { createApp } = Vue
     data() {
       return {
         id:0,
-        nombre:"",
-        imagen:"",
+        name:"",
+        image:"",
         stock:0,
         precio:0,
-        url:'http://127.0.0.1:5000/productos'+id,
+        description: "",
+        url:'http://127.0.0.1:5000/productos/'+id
        }  
     },
     methods: {
@@ -24,10 +25,11 @@ const { createApp } = Vue
                 .then(data => {
                     console.log(data)
                     this.id=data.id,
-                    this.nombre = data.nombre,
-                    this.imagen=data.imagen,
+                    this.name = data.name,
+                    this.image=data.image,
                     this.stock=data.stock,
-                    this.precio=data.precio                   
+                    this.precio=data.precio,
+                    this.descripcion=data.description                  
                 })
                 .catch(err => {
                     console.error(err);
@@ -36,10 +38,11 @@ const { createApp } = Vue
         },
         modificar() {
             let producto = {
-                nombre:this.nombre,
+                name:this.name,
                 precio: this.precio,
                 stock: this.stock,
-                imagen: this.imagen
+                image: this.image,
+                description: this.description
             }
             var options = {
                 body: JSON.stringify(producto),
