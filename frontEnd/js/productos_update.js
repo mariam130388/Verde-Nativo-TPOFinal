@@ -1,8 +1,5 @@
-
-
-
 console.log(location.search)     // lee los argumentos pasados a este formulario
-var id=location.search.substr(4)  // producto_update.html?id=1*/
+var id=location.search.substr(4)  // producto_update.html?id=1
 console.log(id)
 
 const { createApp } = Vue
@@ -16,6 +13,7 @@ const { createApp } = Vue
         precio:0,
         description: "",
         url:'http://127.0.0.1:5000/productos/'+id
+
        }  
     },
     methods: {
@@ -29,7 +27,8 @@ const { createApp } = Vue
                     this.image=data.image,
                     this.stock=data.stock,
                     this.precio=data.precio,
-                    this.descripcion=data.description                  
+                    this.description=data.description                  
+
                 })
                 .catch(err => {
                     console.error(err);
