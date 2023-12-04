@@ -3,6 +3,7 @@ from app import app
 from app import *
 from flask import Flask
 from modelos.usuario_modelo import *
+from flask import redirect
 
 # Endpoint para obtener todos los usuarios
 @app.route('/usuarios', methods=['GET'])
@@ -20,6 +21,9 @@ def registrar_usuario():
     nuevo_usuario=Usuario(usuario, contraseña)
     db.session.add(nuevo_usuario)
     db.session.commit()
+    
+    if usuario == 'admin' and contraseña == '12345678':
+        return redirect('/productos')
     # return jsonify({'mensaje': 'Usuario agregado correctamente'}),201
     return jsonify(nuevo_usuario), 201
 

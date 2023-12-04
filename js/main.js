@@ -90,6 +90,7 @@ function validar_login() {
 
     }
 
+
     if (error == false) {
 
         document.getElementById("usuario").value = ""
