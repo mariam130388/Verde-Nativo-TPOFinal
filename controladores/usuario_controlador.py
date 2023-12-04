@@ -21,7 +21,7 @@ def registrar_usuario():
     db.session.add(nuevo_usuario)
     db.session.commit()
     # return jsonify({'mensaje': 'Usuario agregado correctamente'}),201
-    return usuario.jsonify(nuevo_usuario), 201
+    return jsonify(nuevo_usuario), 201
 
 
 
