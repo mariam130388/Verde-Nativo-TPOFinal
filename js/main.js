@@ -69,48 +69,9 @@ cad = `
 document.querySelector("footer").innerHTML = cad
 
 
-/*Validar formulario registro*/
-
-function registrar() {
-    let usuario = document.getElementById("registro_usuario"); 
-    let clave = document.getElementById("registro_clave");
-    let error = false;
-   
-    document.getElementById("validar_registro_usuario").innerHTML = " ";
-    document.getElementById("validar_registro_clave").innerHTML = " ";
-    if (usuario.value == "") {
-        document.getElementById("validar_registro_usuario").innerHTML = "Completar";
-        error = true;
-        usuario.focus();
-
-    }
-    if (clave.value.length < 8) {
-        document.getElementById("validar_registro_clave").innerHTML = "Completar";
-        error = true;
-        clave.focus();
-
-    }
-    if (error == false) {
-        document.getElementById("usuario").value = ""
-        document.getElementById("validar_registro_usuario").innerHTML = " ";
-        document.getElementById("clave").value = ""
-        document.getElementById("validar_registro_clave").innerHTML = "";
-        alert("Dato enviado")
-    }
-    if (error)
-        return false;
-    else
-        return true;
-}
-
-
-
-
-
-
 /*Valida el formulario login*/
 
-function validar() {
+function validar_login() {
     let usuario = document.getElementById("usuario");
     let clave = document.getElementById("clave");
     let error = false;
@@ -132,9 +93,9 @@ function validar() {
     if (error == false) {
 
         document.getElementById("usuario").value = ""
-        document.getElementById("validar_usuario").innerHTML = "";
+        document.getElementById("usuario").innerHTML = "";
         document.getElementById("clave").value = ""
-        document.getElementById("validar_clave").innerHTML = "";
+        document.getElementById("clave").innerHTML = "";
         alert("Dato enviado")
     }
 

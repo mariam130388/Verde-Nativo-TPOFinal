@@ -21,7 +21,7 @@
       <div class="login-box" id="personal">
         <div class="cuadrado_login">
           <div id="cerrar"><a href="javascript:cerrar()"><img src="img/cruzar.png" alt=""></a></div>
-          <form onsubmit="return validar();">
+          <form onsubmit="return validar_login();">
             <h3>Login</h3>
             <label class="label" for='usuario'>Usuario:</label>
             <input type='text' name='usuario' id='usuario' value="" />
@@ -49,61 +49,39 @@
             <form onsubmit="return consultar();">
                 <fieldset class="form1">
                     <legend>Información de contacto</legend>
-                        <label for="mail">E-mail: <input id="email" name="mail" type="email"></label>
+                        <label for="email">E-mail: <input id="email" name="mail" type="email"></label>
                         <span id="validar_email" style="color:red;"></span>
-                        <label for="tel">Teléfono: <input id='telefono' name="tel" type="number"></label>
+                        <label for="telefono">Teléfono: <input id='telefono' name="tel" type="number"></label>
                         <span id="validar_telefono" style="color:red;"></span>
                         <label for="mensaje">Mensaje: <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea></label>
                         <span id="validar_mensaje" style="color:red;"></span>
                 </fieldset>
                 <input type="submit" value="Enviar">
-              </form>
-
-              <!-- <form onsubmit="return contactar();">
-                <fieldset class="form1">
-                  <legend>Información de contacto</legend>
-                  <label class="nombre" for='nombre'>Nombre:</label>
-                  <input type='text' name='nombre' id='nombre'  />
-                  <span id="validar_nombre" style="color:red;"></span>
-                  <label for='email' name='email'>E-mail: </label>
-                  <input type='email' name='email' id="email">
-                  <span id="validar_email" style="color:red;"></span>
-                  <label class="telefono" for='telefono'>Telefono:</label>
-                  <input type='text' name='telefono' id='telefono'  />
-                  <span id="validar_telefono" style="color:red;"></span>
-                  <label for="mensaje">Mensaje: </label>
-                  <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea></label>
-                </fieldset>
-                <input type='submit' value='Enviar'></td>
-                </fieldset>
-              </form>
-            </div> -->
+            </form>
 
 
 
           </div>
-          <div class="form2">
+          <div id="app" class="form2">
             <p>Registrate a nuestra pagina para realizar compras en el sitio</p>
             <fieldset class="form2">
               <legend>Registro</legend>
-              <form onsubmit="return registrar();">
-                <label for='usuario'>Usuario:</label>
-                <input type='text' name='usuario' id='registro_usuario' value="" />
+              <form id="registroForm" method="POST" action="/usuarios" onsubmit="return validar();">
+                <label for='registro_usuario'>Usuario:</label>
+                <input type='text' name='usuario' id='registro_usuario' v-model="usuario" value="" />
                 <span id="validar_registro_usuario" style="color:red;"></span><br>
-                <label for='clave'>Clave:</label>
-                <input type='password' name='clave' id='registro_clave' value="" />
+                <label for='registro_clave'>Clave:</label>
+                <input type='password' name='contraseña' id='registro_clave' v-model="contraseña" value="" />
                 <span id="validar_registro_clave" style="color:red;"></span>
                 <br><br>
-                <input type='submit' value='Enviar'></td>
+                <input type='submit' value='Registrarse'></td>
+              </form>
             </fieldset>
-          </form>
           </div>
-        </div>
-          
-        
+        </div>   
     </main>
 
-    
+
     <div class="footer">
       <footer>
          
@@ -112,6 +90,10 @@
   </div>
   <script src="js/main.js"></script>
   <script src="js/hamburguesa.js"></script>
-
+  <script src="js/registro_usuario.js"></script>
+  <script src="js/validar_usuario.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </body>
 </html>
+
+

@@ -3,7 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            url: "js/datos.json",
+            // url: "js/datos.json",
+            url: "http://127.0.0.1:5000/productos",
             error: false,
             datos: [],
             cart: [], 

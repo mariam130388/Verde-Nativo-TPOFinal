@@ -1,7 +1,7 @@
 from app import *
 from flask import Flask
 from flask import jsonify, request
-from app import app
+from app import app     
 
 
 from modelos.producto_modelo import *
@@ -56,5 +56,5 @@ def update_producto(id):
     producto.image=request.json['image']
     producto.description=request.json['description']
 
-    # db.session.commit()    # confirma el cambio
-    # return producto_schema.jsonify(producto)    # y retorna un json con el producto
+    db.session.commit()    # confirma el cambio
+    return producto_schema.jsonify(producto)    # y retorna un json con el producto
