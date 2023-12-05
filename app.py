@@ -9,7 +9,6 @@ from marshmallow_sqlalchemy import SQLAlchemySchema
 app=Flask(__name__)  # crear el objeto app de la clase Flask
 CORS(app) #modulo cors es para que me permita acceder desde el frontend al backend
 
-
 # configuro la base de datos, con el nombre el usuario y la clave
 app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:root@localhost/proyecto'
 # URI de la BBDD                          driver de la BD  user:clave@URLBBDD/nombreBBDD
@@ -20,9 +19,6 @@ ma=Marshmallow(app)   #crea el objeto ma de de la clase Marshmallow
 from controladores.producto_controlador import *
 from controladores.curso_controlador import *
 from controladores.usuario_controlador import *
-
-
-
 
 # programa principal *******************************
 if __name__=='__main__':  

@@ -29,7 +29,7 @@
         </div>
         <div class="mb-3">
           <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" v-model="nombre">
+          <input type="text" name="name" id="nombre" v-model="name">
         </div>
         <div class="mb-3">
           <label for="precio">Precio:</label>
@@ -41,12 +41,12 @@
         </div>
         <div class="mb-3">
           <label for="imagen">Imagen:</label>
-          <input type="text" name="imagen" id="imagen" v-model="imagen">
-          <img width="100" :src="imagen" alt="">
+          <input type="text" name="image" id="imagen" v-model="image">
+          <img width="100" :src="image" alt="">
         </div>
         <div class="mb-3">
           <label for="descripcion">Descripcion:</label>
-          <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+          <input type="text" name="description" id="descripcion" v-model="description">
         </div>
         <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
       </form>
@@ -69,7 +69,7 @@
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="./js/main_crud.js"></script>
   <script src="./js/productos_update.js"></script>
 
 

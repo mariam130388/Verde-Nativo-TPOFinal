@@ -24,8 +24,8 @@
         style="background-color: rgb(240, 255, 248);margin:40px auto ; width: 600px; padding: 60px ; font-family: 'Times New Roman', Times, serif; border-radius: 20px;">
         <h1>Alta de Producto</h1>
         <div class="mb-3">
-          <label for="nombre">Nombre: </label>
-          <input type="text" name="name" id="nombre" v-model="nombre">
+          <label for="name">Nombre: </label>
+          <input type="text" name="name" id="nombre" v-model="name">
         </div>
         <div class="mb-3">
           <label for="precio">Precio: </label>
@@ -36,13 +36,13 @@
           <input type="number" name="stock" id="stock" v-model="stock">
         </div>
         <div class="mb-3">
-          <label for="imagen">Imagen: </label>
-          <input type="text" name="image" id="imagen" v-model="imagen">
-          <img width="100" :src="imagen" alt="">
+          <label for="image">Imagen: </label>
+          <input type="text" name="image" id="imagen" v-model="image">
+          <img width="100" :src="image" alt="">
         </div>
         <div class="mb-3">
-          <label for="descripcion">Descripcion: </label>
-          <input type="text" name="description" id="descripcion" v-model="descripcion">
+          <label for="description">Descripcion: </label>
+          <input type="text" name="description" id="descripcion" v-model="description">
         </div>
         <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
       </form>
@@ -64,8 +64,8 @@
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-  <script src="./js/main.js"></script>
-  <script src="./js/productos.js"></script>
+  <script src="/js/main_crud.js"></script>
+  <script src="/js/productos.js"></script>
 
 
 

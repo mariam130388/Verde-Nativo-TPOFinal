@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Nativo</title>
+    <link rel="shortcut icon" href="img/hoja.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sofia&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e566946817.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header>
+        
+
+
+    </header>
+    <main>
+        <div class="login-box_inicio" id="personal">
+          <div class="cuadrado_login">
+            <div id="cerrar"><a href="javascript:cerrar()"><img src="img/cruzar.png" alt=""></a></div>
+            <form onsubmit="return validar();">
+              <h3>Login</h3>
+              <label class="label" for='usuario'>Usuario:</label>
+              <input type='text' name='usuario' id='usuario' value="" />
+              <span class="error" id="validar_usuario" style="color:#dbd8ca;"></span>
+              <br>
+              <label class="label" for="clave">Clave:</label>
+              <input type='password' name='clave' id='clave' value="" />
+              <span class="error" id="validar_clave" style="color:#dbd8ca;"></span>
+              <br>
+              <input type='submit' value='Enviar'></td>
+              <br>
+              <div class="button">
+                <p class="cuenta_registrate">¿No tenes cuenta?</p>
+                <button><a class="registrate" href="contacto.html">Registrate</a></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="table-container">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Articulo</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th>Imagen</th>
+                  <th>Eliminar</th>
+                </tr>
+              </thead>
+              <tbody v-for="producto in datos">
+                <tr>
+                  <td>{{producto.name}}</td>
+                  <td>{{producto.precio}}</td>
+                  <td></td>
+                  <td>
+                    <img width="80" :src="producto.imagen"alt="">
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-warning" v-on:click="eliminar(producto.id)">Eliminar</button>
+                  </td>
+                </tr>                               
+              </tbody>
+            </table>
+
+    
+        
+      </main>
+    
+    <div class="footer">
+      <footer>
+         
+      </footer>
+  </div>
+ 
+
+<script src="js/main.js"></script>
+<script src="js/hamburguesa.js"></script>
+<script src="js/productos.js"></script>
+</body>
+</html>

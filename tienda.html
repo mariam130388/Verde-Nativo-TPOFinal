@@ -49,8 +49,6 @@
           <div class="tarjeta_tienda" v-for="elemento in datos">
             <h3 class="h3_tienda">{{elemento.name}}</h3>
             <img class="foto_plantas " v-bind:src="elemento.image" :alt="elemento.name">
-            <!-- <p>{{elemento.description}}</p> -->
-            <!-- <p>{{elemento.size}}</p> -->
             <p id="precio">{{elemento.precio}}</p>
 
             <div class="control-cantidad">
@@ -60,7 +58,7 @@
             </div>  
 
             <div class="tarjeta_accion">
-              <button class="boton-compra">
+              <button class="boton-compra" >
                 <span class="fa-solid fa-cart-shopping fa-xl" style="color: #514b1f;"></span>
                 <p id="agregar-carrito">Agregar al carrito</p>
               </button>
