@@ -68,7 +68,7 @@
             <p>Registrate a nuestra pagina para realizar compras en el sitio</p>
             <fieldset class="form2">
               <legend>Registro</legend>
-              <form id="registroForm" method="POST" action="/usuarios" onsubmit="return validar();">
+              <form id="registroForm" @submit.prevent="grabar">
                 <label for='registro_usuario'>Usuario:</label>
                 <input type='text' name='usuario' id='registro_usuario' v-model="usuario"/>
                 <span id="validar_registro_usuario" style="color:red;"></span><br>
@@ -79,10 +79,11 @@
                 <input type='submit' value='Registrarse'></td>
               </form>
             </fieldset>
-          </div>
+          </div>    
         </div>   
     </main>
 
+    <!-- method="POST" action="/usuarios" onsubmit="return validar();" v-on:click="grabar(usuario.id)" -->
 
     <div class="footer">
       <footer>

@@ -23,9 +23,10 @@ def registrar_usuario():
     db.session.commit()
     
     if usuario == 'admin' and contraseña == '12345678':
-        return redirect('/productos')
-    # return jsonify({'mensaje': 'Usuario agregado correctamente'}),201
-    return jsonify(nuevo_usuario), 201
+        return redirect({'ruta':'/productos'}), 201
+    
+    
+    return usuario_schema.jsonify(usuario_schema)
 
 
 
