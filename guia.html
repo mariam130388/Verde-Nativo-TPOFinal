@@ -22,7 +22,7 @@
         <div class="login-box" id="personal">
             <div class="cuadrado_login">
               <div id="cerrar"><a href="javascript:cerrar()"><img src="img/cruzar.png" alt=""></a></div>
-              <form onsubmit="return validar();">
+              <form onsubmit="return validar_login();">
                 <h3>Login</h3>
                 <label class="label" for='usuario'>Usuario:</label>
                 <input type='text' name='usuario' id='usuario' value="" />
@@ -32,7 +32,7 @@
                 <input type='password' name='clave' id='clave' value="" />
                 <span class="error" id="validar_clave" style="color:#dbd8ca;"></span>
                 <br>
-                <input type='submit' value='Enviar'></td>
+                <input type='submit' onclick="verificarUsuario()" value='Enviar'></td>
                 <br>
               <div class="button">
                 <p class="cuenta_registrate">¿No tenes cuenta?</p>
@@ -807,5 +807,6 @@
     </div>
     <script src="js/main.js"></script>
     <script src="js/hamburguesa.js"></script>
+    <script src="js/validar_admin_login.js"></script>
 </body>
 </html>
