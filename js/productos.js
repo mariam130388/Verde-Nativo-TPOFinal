@@ -3,7 +3,7 @@ const { createApp } = Vue
     data() {
       return {
         productos:[],
-        url:'http://127.0.0.1:5000/productos',
+        url:'https://mariamtomas.pythonanywhere.com/productos',
         error:false,
         cargando:true,
         datos:[],

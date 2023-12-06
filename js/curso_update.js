@@ -10,7 +10,7 @@ const { createApp } = Vue
         titulo:"",
         descripcion:"",
         video:0,
-        url:'http://127.0.0.1:5000/cursos/'+id
+        url:'https://mariamtomas.pythonanywhere.com/cursos/'+id
 
        }  
     },
@@ -46,7 +46,7 @@ const { createApp } = Vue
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro modificado")
-                    window.location.href = "./crud_cursos.html"; // navega a crud_cursos.html          
+                    window.location.href = "crud_cursos.html"; // navega a crud_cursos.html          
                 })
                 .catch(err => {
                     console.error(err);

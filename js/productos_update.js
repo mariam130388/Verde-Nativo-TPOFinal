@@ -12,7 +12,7 @@ const { createApp } = Vue
         stock:0,
         precio:0,
         description: "",
-        url:'http://127.0.0.1:5000/productos/'+id
+        url:'https://mariamtomas.pythonanywhere.com/productos/'+id
 
        }  
     },
