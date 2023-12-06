@@ -7,17 +7,12 @@ cad= `<nav class="navbar navbar-expand-sm navbar-light bg-light">
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-              <a class="nav-link active" href="index.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="usuario.html">Usuario</a>
-          </li>
+          
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
                   <a class="dropdown-item" href="productos.html">Productos</a>
-                  <a class="dropdown-item" href="index.html">Administrador</a>
+                  <a class="dropdown-item" href="crud_cursos.html">Cursos</a>
               </div>
           </li>
       </ul>

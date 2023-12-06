@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sofia&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e566946817.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> -->
   </head>
   <body>
     <header class="wrapper">
@@ -47,8 +49,14 @@
         <div class="guia">
             <h2>Cursos y Talleres</h2>
         </div>
-        <div class="us">
-            <h2>Jardinería Nativa <a class="curso" href="contacto.html">+Info</a></h2>
+        <div id="app" class="us">
+          <div v-for="curso in datos">
+            <h2>{{curso.titulo}}<a class="curso" href="contacto.html">+Info</a></h2>
+            <p>{{curso.descripcion}}</p>
+            <div class="video-cont">
+              <iframe class="responsive-iframe" v-bind:src="curso.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+            <!-- <h2>Jardinería Nativa <a class="curso" href="contacto.html">+Info</a></h2>
             <p>Enseña a los participantes cómo diseñar, planificar y mantener un jardín utilizando exclusivamente plantas nativas de Buenos Aires y Argentina en general. Se cubrirán temas como la selección de plantas, la preparación del suelo, el riego y la poda.</p>
             <div class="video-cont">
                 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/aBDdoPH_bCA?si=UVCScYB2N1myxstp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -72,8 +80,9 @@
             <p>En este curso aprenderás tus primeros pasos para diseñar un jardín o terraza, como mantenerlo y que aspectos a tener en cuenta.</p>
             <div class="video-cont">
                 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/bF3zlHnF5PM?si=ABqpS3ppc3ay3mzb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>        
-        </div>
+            </div>         -->
+       </div> 
+      </div>
     </main>
 
 
@@ -83,8 +92,10 @@
 
       </footer>
   </div>
-  <script src="js/main.js"></script>
-  <script src="js/hamburguesa.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/hamburguesa.js"></script>
+  <script src="/js/curso.js"></script>
+
 </body>
 </html>
 

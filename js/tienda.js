@@ -1,48 +1,91 @@
 const { createApp } = Vue
-
-createApp({
+  createApp({
     data() {
-        return {
-            // url: "js/datos.json",
-            url: "http://127.0.0.1:5000/productos",
-            error: false,
-            datos: [],
-            cart: [], 
-        }
+      return {
+        productos:[],
+        url:'http://127.0.0.1:5000/productos',   
+        error:false,
+        cargando:true,
+        datos:[],
+        name:"",
+        precio:0,
+        stock:0,
+        image: "",
+        description: ""
+       
+    }  
     },
-
     methods: {
         fetchData(url) {
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    this.datos = data.content;
+                    
+                   console.log(data)
+                    this.datos=data
                     this.datos.forEach(elemento => {
                         elemento.cantidad = 0;
                     });
-                });
-        },
+                })
+                .catch(error => alert("Ups...se produjo un error:"+ error))
+                              
+                },
 
-        addItemToCart(elemento, cantidad) {
-            this.cart.push({
-                nombre: elemento.nombre,
-                precio: elemento.precio,
-                cantidad: cantidad,
-            });
-        },
+                eliminar(id) {
+                    const url = this.url+'/' + id;
+                    var options = {
+                        method: 'DELETE',
+                    }
+                    fetch(url, options)
+                        .then(res => res.text()) // or res.json()
+                        .then(res => {
+                     alert('Registro Eliminado')
+                            location.reload(); // recarga el json luego de eliminado el registro
+                        })
+                },
+        
 
- reducirCantidad(item) {
-    if (item.cantidad > 1) {
-        item.cantidad--;
-    }
-},
+                grabar(){
+                    let producto = {
+                        name:this.name,
+                        precio: this.precio,
+                        stock: this.stock,
+                        image:this.image,
+                        description: this.description
+                    }
+                    var options = {
+                        body:JSON.stringify(producto),
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        redirect: 'follow'
+                    }
+        
+                    fetch(this.url, options)
+                    .then(function () {
+                        alert("Registro grabado")
+                        window.location.href = "./productos.html";  // recarga productos.html
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        alert("Error al Grabar" + err)  // puedo mostrar el error tambien
+                    })      
+            },
+            
+            reducirCantidad(item) {
+                if (item.cantidad > 1){
+                    item.cantidad--;
+                }
+            },
+            
+            incrementarCantidad(item) {
+                item.cantidad++;
+            }
+            
+          },
+               
+    created() {
+        this.fetchData(this.url)
+    },
+  }).mount('#app')
 
-incrementarCantidad(item) {
-    item.cantidad++;
-}
-},
 
-created() {
-this.fetchData(this.url)
-}
-}).mount("#app")

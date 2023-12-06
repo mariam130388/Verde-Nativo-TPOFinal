@@ -19,11 +19,11 @@ def get_curso(id):
 # Endpoint para crear un nuevo curso
 @app.route('/cursos', methods=['POST'])
 def create_curso():
-    nombre = request.json['nombre']
-    precio = request.json['precio']
-    duracion = request.json['duracion']
+    titulo = request.json['titulo']
+    descripcion = request.json['descripcion']
+    video = request.json['video']
     
-    nuevo_curso = Curso(nombre=nombre, precio=precio, duracion=duracion)
+    nuevo_curso = Curso(titulo=titulo, descripcion=descripcion, video=video)
     db.session.add(nuevo_curso)
     db.session.commit()
     return curso_schema.jsonify(nuevo_curso)
@@ -35,9 +35,9 @@ from modelos.curso_modelo import *
 def update_curso(id):
     curso = Curso.query.get(id)
     
-    curso.nombre = request.json['nombre']
-    curso.precio = request.json['descripcion']
-    curso.duracion = request.json['duracion']
+    curso.titulo = request.json['titulo']
+    curso.descripcion = request.json['descripcion']
+    curso.video = request.json['video']
     
     db.session.commit()
     
@@ -51,7 +51,3 @@ def delete_curso(id):
     db.session.commit()
     
     return curso_schema.jsonify(curso)
-
-
-    # db.session.commit()    # confirma el cambio
-    # return producto_schema.jsonify(producto)    # y retorna un json con el producto

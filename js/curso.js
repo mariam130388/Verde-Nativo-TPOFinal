@@ -2,16 +2,14 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        productos:[],
-        url:'http://127.0.0.1:5000/productos',
+        cursos:[],
+        url:'http://127.0.0.1:5000/cursos',
         error:false,
         cargando:true,
         datos:[],
-        name:"",
-        precio:0,
-        stock:0,
-        image: "",
-        description: ""
+        titulo:"",
+        descripcion:"",
+        video:""
        
     }  
     },
@@ -42,15 +40,13 @@ const { createApp } = Vue
         
 
                 grabar(){
-                    let producto = {
-                        name:this.name,
-                        precio: this.precio,
-                        stock: this.stock,
-                        image:this.image,
-                        description: this.description
+                    let curso = {
+                        titulo:this.titulo,
+                        descripcion: this.descripcion,
+                        video: this.video
                     }
                     var options = {
-                        body:JSON.stringify(producto),
+                        body:JSON.stringify(curso),
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         redirect: 'follow'
@@ -59,7 +55,7 @@ const { createApp } = Vue
                     fetch(this.url, options)
                     .then(function () {
                         alert("Registro grabado")
-                        window.location.href = "./productos.html";  // recarga productos.html
+                        window.location.href = "./crud_cursos.html";  // recarga cursos.html
                     })
                     .catch(err => {
                         console.error(err);
@@ -72,3 +68,4 @@ const { createApp } = Vue
         this.fetchData(this.url)
     },
   }).mount('#app')
+
